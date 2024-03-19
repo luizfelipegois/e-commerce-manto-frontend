@@ -26,9 +26,9 @@ const Gallery = () => {
     },
     {
       id: 3,
-      img: "https://images.unsplash.com/photo-1541580621-cb65cc53084b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Moda Infantil",
-      mainTitle: "A combinação perfeita para quem mais amamos",
+      img: "https://images.unsplash.com/photo-1646938863839-4d49ded55765?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Fitness",
+      mainTitle: "",
     },
     {
       id: 4,
@@ -45,8 +45,8 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="h-[650px] w-screen px-4">
-      <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-2 gap-2 h-full w-full">
+    <section className="md:h-[650px] px-4 py-4 md:py-0">
+      <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 md:grid-rows-2 gap-2 h-full w-full">
         {slideData.map(({ id, img, mainTitle, title }) => (
           <Link href="#" key={id} className={`${id === 0 ? "md:col-span-2" : ""} ${id === 5 ? "md:col-span-2" : ""} relative gallery__card`}>
             <div className="flex flex-col absolute bottom-5 left-5">
