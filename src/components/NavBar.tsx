@@ -4,7 +4,7 @@ import React from 'react';
 const NavBar = () => {
   return (
     <div className="hidden lg:block">
-      <div className="container">
+      <div className="flex w-full">
         <nav className="flex w-fit gap-10 mx-auto font-medium py-4 text-blackish">
           <Link className="navbar__link relative text-[14px]" href="#">INÍCIO</Link>
           <Link className="navbar__link relative text-[14px]" href="#">BEST SELLERS</Link>
