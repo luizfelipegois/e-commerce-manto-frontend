@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
 @layer components {
   .navbar__link:hover {
     color: #ff8f9c;
@@ -23,5 +29,14 @@
 
   .navbar__link:hover::after {
     scale: 1;
+  }
+
+  .gallery__card:hover {
+    scale: 1.01;
+    transition: all 0.4s;
+  }
+
+  .gallery__card:hover .gallery__card__button {
+    display: block;
   }
 }
