@@ -12,7 +12,7 @@ const SessionPresentation = () => {
   ];
 
   return (
-    <section className="px-4">
+    <section className="px-4 md:mb-80">
       <h1 className="text-center w-full font-semibold uppercase md:py-32 py-20">
         Apresentamos
       </h1>
@@ -21,7 +21,7 @@ const SessionPresentation = () => {
           <img
             alt="category"
             src={img}
-            className="w-full h-full object-cover"
+            className="object-cover"
           />
           <div className="flex flex-col items-center justify-center">
             <p className={`text-[52px] text-neutral-800 uppercase font-light`}>
