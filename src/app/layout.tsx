@@ -4,14 +4,15 @@ import "./globals.css";
 import HeaderTop from "@/components/HeaderTop";
 import HeaderMain from "@/components/HeaderMain";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const roboto = Roboto({
-  weight: '400',
+  weight: '300',
   subsets: ['latin'],
 })
 
 export const metadata: Metadata = {
-  title: "manto",
+  title: "Manto",
   description: "Your men's and women's fashion e-commerce",
 };
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <HeaderMain />
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
