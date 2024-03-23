@@ -45,21 +45,19 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="md:h-[650px] px-4 py-4 md:py-0">
-      <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 md:grid-rows-2 gap-2 h-full w-full">
-        {slideData.map(({ id, img, mainTitle, title }) => (
-          <Link href="#" key={id} className={`${id === 0 ? "md:col-span-2" : ""} ${id === 5 ? "md:col-span-2" : ""} relative gallery__card`}>
-            <div className="flex flex-col absolute bottom-5 left-5">
-              <h1 className={`text-[32px] text-neutral-100`}>{title}</h1>
-              <h1 className="text-[16px] text-slate-100 font-regular">{mainTitle}</h1>
-            </div>
-            <button className="hidden absolute top-5 right-5 bg-[#D8D8DA] p-4 rounded-full gallery__card__button">
-              <ArrowUpRightIcon className="h-6 w-6 " />
-            </button>
-            <img alt="category" src={img} className="w-full h-full object-cover"/>
-          </Link>
-        ))}
-      </div>
+    <section className="px-4 lg:px-8 py-4 grid grid-cols-1 lg:grid-cols-4 grid-rows-2 lg:grid-rows-2 gap-2 h-full w-full">
+      {slideData.map(({ id, img, mainTitle, title }) => (
+        <Link href="#" key={id} className={`${id === 0 ? "md:col-span-2" : ""} ${id === 5 ? "md:col-span-2" : ""} relative gallery__card`}>
+          <div className="flex flex-col absolute bottom-5 left-5">
+            <h1 className={`text-[32px] text-neutral-100`}>{title}</h1>
+            <h1 className="text-[16px] text-slate-100 font-regular">{mainTitle}</h1>
+          </div>
+          <button className="hidden absolute top-5 right-5 bg-[#D8D8DA] p-4 rounded-full gallery__card__button">
+            <ArrowUpRightIcon className="h-6 w-6 " />
+          </button>
+          <img alt="category" src={img} className="w-full h-full object-cover"/>
+        </Link>
+      ))}
     </section>
   );
 };
